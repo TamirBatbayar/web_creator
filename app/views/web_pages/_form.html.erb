@@ -1,0 +1,13 @@
+<%= simple_form_for(@web_page) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :company_name %>
+    <%= f.input :url %>
+    <%= f.cktext_area :content %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
